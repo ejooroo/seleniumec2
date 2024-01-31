@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Besley:wght@900&family=IBM+Plex+Sans+Thai:wght@100&display=swap">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <title>Ejemplo Web</title>
+</head>
+
+<style>
+  body {
+    font-family: 'IBM Plex Sans Thai', serif;
+    font-size: 14px;
+  }
+</style>
+
+<body>
+  <div class="top-heading">
+    <h2>
+      <img src="{{url_for('static', filename='logo.png')}}" width=50> quantdata4u
+    </h2>
+  </div>
+
+  <div class='outer'>
+    <div class='inner'>
+      <p>Página web de prueba</p>
+
+      <form action='/work' method='POST'>
+
+        <div class='input_area'>
+          <label for="feature_01">Feature #1</label>
+          <input type="text" id="feat_01" name="feature_01" style="width: 50em; text-align: left;">
+          <!-- Cambié type de "number" a "text" -->
+        </div>
+
+        <div class='input_area'>
+          <label for="feature_02">Feature #2</label>
+          <!-- Cambié type de "number" a "text" -->
+          <input type="text" id="feat_02" name="feature_02" style="width: 50em; height: 10em; vertical-align: top;">
+        </div>
+
+        <div style="width:700px;" id="container">
+          <button type="submit" class="btn">
+            Get it!
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <p>
+      Author: quantdata4u<br>
+      Have a nice day!
+    </p>
+
+  </div>
+</body>
+
+</html>
+
+
